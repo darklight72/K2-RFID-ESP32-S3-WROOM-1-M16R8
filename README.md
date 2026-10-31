@@ -1,6 +1,6 @@
 # K2-RFID
  
-Web app controlled and esp32-powered K2/CFS RFID programming thingy based on [DnG-Crafts/K2-RFID](https://github.com/DnG-Crafts/K2-RFID).
+Web app controlled and esp32-powered K2/CFS RFID programming thingy based on [DnG-Crafts/K2-RFID](https://github.com/DnG-Crafts/K2-RFID), forked from [soylentOrange/K2-RFID](https://github.com/soylentOrange/K2-RFID) to support the ESP32-S3-WROOM-1 M16R8.
 
 ## Why do I need it?
 
@@ -10,12 +10,12 @@ As the tagged spools from Creality come with an additional price and also to ret
 ## What do I need to make one?
 
 Essential components:
-- esp32 microcontroller board (tested with a [Wemos S2 mini board](https://www.wemos.cc/en/latest/s2/s2_mini.html))
-- PN532 NFC/RFID board
-- MIFARE classic 1k tags
+- esp32 microcontroller board (modified to work with the [AITRIP ESP32-S3-WROOM-1](https://www.amazon.com/dp/B0H1M8XHZX))
+- PN532 NFC/RFID board [AITRIP PN532 NFS NXP RFID Module V3 Kit](https://www.amazon.com/dp/B0GTNRDXYB)
+- MIFARE classic 1k tags [100pcs MF Classic 1k NFC Tag Stickers](https://www.amazon.com/dp/B081CFXCBJ)
 
 Optionally:
-- housing (available on [Printables](https://www.printables.com/model/1284434-k2-rfid-box) or [CrealityCloud](https://www.crealitycloud.com/model-detail/68165e11f8576ee3f90c7d2b?source=61))
+- housing (to be provided at a later date...I'm not in love with what I built yet)
 - WS2812b RGB LED (and ~1µF capacitor)
 - piezo disk (and ~100 Ohm resistor)
 
@@ -174,16 +174,6 @@ Then clone the repository, open it in [Visual Studio Code](https://code.visualst
 
 ## Acknowledgements
 
-* This project is based the project [DnG-Crafts/K2-RFID](https://github.com/DnG-Crafts/K2-RFID). I redesigned the website to my likings, and completely re-wrote the esp32 code. 
+* This project is based the project [soylentOrange/K2-RFID](https://github.com/soylentOrange/K2-RFID) and modified to support the ESP32-S3-WROOM-1 M16R8.
 
-* The app icon is modified from [Solar Icons](https://www.figma.com/community/file/1166831539721848736?ref=svgrepo.com) in CC Attribution License via [SVG Repo](https://www.svgrepo.com/).
-
-* The favicon was prepared according (loosely) the guide [How to Favicon in 2025](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs). 
-
-* Creating svgs with Inkscape leaves a lot of clutter in the file, [svgo](https://github.com/svg/svgo) helps.
-
-* The Toast notifications are made with [Toastify](https://github.com/apvarun/toastify-js).
-
-* Splashcreens for iOS are auto-generated with [iosPWASplash](https://github.com/avadhesh18/iosPWASplash).
-
-* The formula for generating the breathing LED was found in a post at [ThingPulse](https://thingpulse.com/breathing-leds-cracking-the-algorithm-behind-our-breathing-pattern).
+* All acknowledgements on the original source are applicable here.
